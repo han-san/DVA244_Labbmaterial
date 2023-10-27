@@ -29,7 +29,7 @@ int main(void)
 void menuQueue()
 {
     int choice;
-    char c;
+    int c;
     Data data;
     Queue myQueue = initializeQueue();
     
@@ -79,7 +79,7 @@ void menuQueue()
 void menuStack()
 {
     int choice;
-    char c;
+    int c;
     Data data;
     Stack myStack = initializeStack();
     
@@ -128,7 +128,7 @@ void menuStack()
 void menuSet()
 {
     int choice;
-    char c;
+    int c;
     Data data;
     Set mySet = initializeSet();
     

@@ -29,7 +29,7 @@ void menu(List head)
 {
     int choice;
     Data data;
-    char c; //Anvands endast for att rensa lasbufferten
+    int c; //Anvands endast for att rensa lasbufferten
     
     do
     {
