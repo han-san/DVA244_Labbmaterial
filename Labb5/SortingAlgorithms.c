@@ -20,9 +20,9 @@ int isImplemented(SortingAlgorithm algorithm)
 	}
 }
 
-/*Antalet byten i en och samma algoritm kan vara olika beroende på implementationen. Ibland ligger datat redan på rätt plats och då kan man välja att testa det och inte göra ett byte (vilket ger extra jämförelse) eller så kan man ändå göra ett byte (med sig själv). Följer man de algoritmer som vi gått igenom på föreläsningarna exakt så gör man en swap även på ett element som ligger på rätt plats
+/*Antalet byten i en och samma algoritm kan vara olika beroende p√• implementationen. Ibland ligger datat redan p√• r√§tt plats och d√• kan man v√§lja att testa det och inte g√∂ra ett byte (vilket ger extra j√§mf√∂relse) eller s√• kan man √§nd√• g√∂ra ett byte (med sig sj√§lv). F√∂ljer man de algoritmer som vi g√•tt igenom p√• f√∂rel√§sningarna exakt s√• g√∂r man en swap √§ven p√• ett element som ligger p√• r√§tt plats
  
-    När du analyserar det data som genereras (result.txt) så behöver du ha detta i åtanke */
+    N√§r du analyserar det data som genereras (result.txt) s√• beh√∂ver du ha detta i √•tanke */
 
 /******************************************************************************************/
 /* Era algoritmer har: */
@@ -52,8 +52,8 @@ static void quickSort(ElementType* arrayToSort, unsigned int size, Statistics* s
 
 char* getAlgorithmName(SortingAlgorithm algorithm)
 {
-	/* Ar inte strangen vi allokerar lokal for funktionen?
-	   Nej, inte i detta fall. Strangkonstanter ar ett speciallfall i C */
+	/* √Ñr inte str√§ngen vi allokerar lokal f√∂r funktionen?
+	   Nej, inte i detta fall. Str√§ngkonstanter √§r ett speciallfall i C */
 	switch (algorithm)
 	{
         case BUBBLE_SORT:	 return "  Bubble sort ";
@@ -65,7 +65,7 @@ char* getAlgorithmName(SortingAlgorithm algorithm)
 	}
 }
 
-// Sorterar 'arrayToSort' med 'algorithmToUse'. Statistik for antal byten och jamforelser hamnar i *statistics
+// Sorterar 'arrayToSort' med 'algorithmToUse'. Statistik f√∂r antal byten och j√§mf√∂relser hamnar i *statistics
 static void sortArray(ElementType* arrayToSort, unsigned int size, SortingAlgorithm algorithmToUse, Statistics* statistics)
 {
 	if(statistics != NULL)
@@ -83,7 +83,7 @@ static void sortArray(ElementType* arrayToSort, unsigned int size, SortingAlgori
 	}
 }
 
-// Forbereder arrayer for sortering genom att allokera minne for dem, samt intialisera dem
+// F√∂rbereder arrayer f√∂r sortering genom att allokera minne f√∂r dem, samt intialisera dem
 static void prepareArrays(SortingArray sortingArray[], SortingAlgorithm algorithm, const ElementType* arrays[], const unsigned int sizes[])
 {
 	assert(isImplemented(algorithm));
