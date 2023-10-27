@@ -44,7 +44,7 @@ int main(void)
 				fprintf(file, "Sorterat: \n");
 				sortAndPrint(forward, algorithm, forwardArray, sizes, file);
 
-				fprintf(file, "Bakåtsorterat: \n");
+				fprintf(file, "BakÃ¥tsorterat: \n");
 				sortAndPrint(backward, algorithm, backwardArray, sizes, file);
 
 				freeArray(unsorted);
