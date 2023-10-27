@@ -20,9 +20,13 @@ int isImplemented(SortingAlgorithm algorithm)
 	}
 }
 
-/*Antalet byten i en och samma algoritm kan vara olika beroende på implementationen. Ibland ligger datat redan på rätt plats och då kan man välja att testa det och inte göra ett byte (vilket ger extra jämförelse) eller så kan man ändå göra ett byte (med sig själv). Följer man de algoritmer som vi gått igenom på föreläsningarna exakt så gör man en swap även på ett element som ligger på rätt plats
- 
-    När du analyserar det data som genereras (result.txt) så behöver du ha detta i åtanke */
+/* Antalet byten i en och samma algoritm kan vara olika beroende på implementationen.
+ * Ibland ligger datat redan på rätt plats och då kan man välja att testa det och inte
+ * göra ett byte (vilket ger extra jämförelse) eller så kan man ändå göra ett byte
+ * (med sig själv). Följer man de algoritmer som vi gått igenom på föreläsningarna exakt
+ * så gör man en swap även på ett element som ligger på rätt plats.
+ * 
+ * När du analyserar det data som genereras (result.txt) så behöver du ha detta i åtanke */
 
 /******************************************************************************************/
 /* Era algoritmer har: */
