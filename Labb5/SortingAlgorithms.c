@@ -115,7 +115,7 @@ static void sortArrays(SortingArray toBeSorted[])
 		if (!isSorted(current->arrayToSort, current->arraySize))
 		{
 			printf("Fel! Algoritmen %s har inte sorterat korrekt!\n", getAlgorithmName(current->algorithm));
-			printf("Resultatet är: \n");
+			printf("Resultatet ar \n");
 			printArray(current->arrayToSort, current->arraySize, stdout);
 			assert(0); // Aktiveras alltid
 		}
