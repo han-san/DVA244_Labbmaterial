@@ -1,5 +1,7 @@
 #ifndef STATISTICS_H
 #define STATISTICS_H
+#include "Array.h" // Få tillgång till ElementType
+
 #include <stdio.h>
 
 /********************************************************
@@ -34,6 +36,6 @@ int lessThanOrEqualTo(int element1, int element2, Statistics* statistics); // sa
 int greaterThanOrEqualTo(int element1, int element2, Statistics* statistics); // sant om element >= element2
 
 // Byter plats på element1 och element2 med statistik
-void swapElements(int* element1, int* element2, Statistics* statistics);
+void swapElements(ElementType* element1, ElementType* element2, Statistics* statistics);
 
 #endif
